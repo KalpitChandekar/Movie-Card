@@ -4,42 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Card</title>
- 
+
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <div
+      class="bg-white text-[#181028] p-8 space-y-4 shadow-lg max-w-md md:max-w-lg"
+    >
+      <header
+        class="flex justify-between items-center border-b border-purple-200 py-4"
+      >
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-arrow-left"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M5 12l14 0"></path>
+            <path d="M5 12l6 6"></path>
+            <path d="M5 12l6 -6"></path>
+          </svg>
+        </button>
 
-    <div class="bg-white text-[#181028] p-8 space-y-4 shadow-lg max-w-md md:max-w-lg">
+        <h2 class="text-2xl">In Theaters</h2>
 
-<header class="flex justify-between items-center border-b border-purple-200 py-4">
+        <button class="rotate-90">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-mcdonalds"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M20 20c0 -3.952 -.966 -16 -4.038 -16s-3.962 9.087 -3.962 14.756c0 -5.669 -.896 -14.756 -3.962 -14.756c-3.065 0 -4.038 12.048 -4.038 16"
+            ></path>
+          </svg>
+        </button>
+      </header>
 
-    <button><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 12l14 0"></path>
-   <path d="M5 12l6 6"></path>
-   <path d="M5 12l6 -6"></path>
-</svg></button>
+      <section>
+        <h1
+          class="flex justify-between items-center text-2xl font-bold text-purple-600 my-4"
+        >
+          Movie
+          <span
+            class="text-[#181028] flex justify-center items-center w-14 h-14 bg-purple-200 rounded-full"
+            >8.1</span
+          >
+        </h1>
 
-    <h2 class="text-2xl">In Theaters</h2>
+        <div class="mb-10">
+          <img
+            class="w-full h-60"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX45FK0EDuOuF1ASx3oMd0M8E1BYAEvx8toA&usqp=CAU"
+            alt="pixels"
+          />
+        </div>
 
-    <button class="rotate-90"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-mcdonalds" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M20 20c0 -3.952 -.966 -16 -4.038 -16s-3.962 9.087 -3.962 14.756c0 -5.669 -.896 -14.756 -3.962 -14.756c-3.065 0 -4.038 12.048 -4.038 16"></path>
-</svg></button>
-
-</header>
-
-<section>
-  <h1 class="flex justify-between items-center text-2xl font-bold text-purple-600 my-4">Movie <span class="text-[#181028] flex justify-center items-center w-14 h-14  bg-purple-200 rounded-full">8.1</span></h1>
-<div><img src="https://images.pexels.com/photos/7299484/pexels-photo-7299484.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pixels"></div>
-<small>2h 21min</small>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ducimus, delectus doloremque cupiditate reiciendis dolores? Sequi praesentium aliquam a, minus pariatur perspiciatis velit officia cupiditate animi, maiores qui. Cum, aliquam.</p>
-<button>
-Buy me please, we need money
-</button>
-</section>
-
+        <small>2h 45min</small>
+        <p>
+          This movie is a must-see for all cinema lovers. It features an
+          incredible cast, stunning visuals, and a captivating storyline that
+          will keep you on the edge of your seat. Don't miss out on the
+          cinematic experience of the year!
+        </p>
+        <button>  Buy Tickets<button>
+      </section>
     </div>
- </body>
+  </body>
 </html>
